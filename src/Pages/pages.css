@@ -1,0 +1,335 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1340px;
+  margin: 0px auto;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  padding: 15px 50px;
+  position: absolute;
+  width: 100%;
+}
+header .main {
+  align-items: center;
+}
+header .main .logo {
+  width: 15%;
+}
+header .main .menu {
+  width: 60%;
+}
+header .main .menu ul li {
+  text-transform: capitalize;
+  font-size: 19px;
+  padding: 12px 12px;
+  font-weight: 600;
+  color: white;
+  transition: all 0.5s;
+}
+header .main .menu ul li:hover {
+  color: rgb(79, 0, 0);
+}
+header .main .icon {
+  width: 25%;
+}
+header .main .icon ul {
+  justify-content: end;
+}
+header .main .icon ul li i {
+  font-size: 20px;
+  padding: 0px 12px;
+  color: white;
+  transition: all 0.5s;
+}
+header .main .icon ul li:hover i {
+  color: rgb(79, 0, 0);
+}
+
+.slider-section {
+  background-image: url("/public/slider.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+.slider-section .container .row .content,
+.slider-section .container .row .content-2 {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  height: 50vh;
+}
+.slider-section .container .row .content .details span,
+.slider-section .container .row .content-2 .details span {
+  font-size: 28px;
+  color: white;
+}
+.slider-section .container .row .content .details h2,
+.slider-section .container .row .content-2 .details h2 {
+  font-size: 90px;
+  color: white;
+}
+
+.about-section {
+  padding: 40px 0px;
+  background-image: url("/public/bg-vector-1.svg");
+  background-repeat: no-repeat;
+}
+.about-section .container .row .head {
+  width: 40%;
+  margin: 0px auto;
+  padding: 60px 0px;
+}
+.about-section .container .row .head span {
+  text-align: center;
+  display: block;
+  color: #e73840;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.about-section .container .row .head h3 {
+  text-align: center;
+  font-family: ivypresto-display, serif;
+  font-size: 55px;
+  font-weight: 500;
+  padding: 12px 0px;
+}
+.about-section .container .row .all-cards {
+  padding: 30px 0px;
+}
+.about-section .container .row .all-cards .main {
+  width: 25%;
+  padding: 15px;
+}
+.about-section .container .row .all-cards .main .card {
+  height: 400px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-blend-mode: darken;
+  background-color: rgba(0, 0, 0, 0.1607843137);
+}
+.about-section .container .row .all-cards .main .card::after {
+  position: absolute;
+  content: "";
+  box-sizing: border-box;
+  background-color: rgba(201, 169, 138, 0.5450980392);
+  width: 0%;
+  height: 0%;
+}
+.about-section .container .row .all-cards .main .card .containe {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
+}
+.about-section .container .row .all-cards .main .card .containe .name span {
+  font-size: 25px;
+  color: white;
+  font-weight: 600;
+  text-transform: capitalize;
+  display: block;
+}
+.about-section .container .row .all-cards .main .card:hover .containe .name span {
+  color: #7f1319;
+}
+.about-section .container .row .all-cards .main .card:hover::after {
+  width: 100%;
+  height: 100%;
+}
+
+.shope-section {
+  padding: 40px 0px;
+}
+.shope-section .video {
+  padding: 40px 0px;
+  background-image: url("/public/cake.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 650px;
+  position: relative;
+}
+.shope-section .video .v-tag {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%);
+  width: 80px;
+  height: 80px;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.shope-section .video .v-tag span {
+  display: block;
+  font-weight: 600;
+  color: white;
+  text-transform: uppercase;
+}
+.shope-section .shope-online {
+  background-image: url("/public/gold-patten.png");
+  background-color: #FBF6F2;
+  padding: 120px 0px 80px;
+}
+.shope-section .shope-online .container .row .elementor {
+  justify-content: space-between;
+  padding: 25px 0px;
+}
+.shope-section .shope-online .container .row .elementor .card {
+  width: 15%;
+}
+.shope-section .shope-online .container .row .elementor .card img {
+  transform: scale(0.9);
+  transition: all 0.5s;
+}
+.shope-section .shope-online .container .row .elementor .card img:hover {
+  transform: scale(1);
+}
+.shope-section .shope-online .container .row .head {
+  width: 40%;
+  margin: 0px auto;
+  padding-top: 60px;
+}
+.shope-section .shope-online .container .row .head span {
+  text-align: center;
+  display: block;
+  color: #e73840;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.shope-section .shope-online .container .row .head h3 {
+  text-align: center;
+  font-family: ivypresto-display, serif;
+  font-size: 55px;
+  font-weight: 500;
+  padding-top: 30px;
+}
+.shope-section .shope-online .container .all-cake-card {
+  padding: 50px 0px 40px;
+}
+.shope-section .shope-online .container .all-cake-card .main {
+  width: 25%;
+  padding: 15px;
+}
+.shope-section .shope-online .container .all-cake-card .main .card .image {
+  overflow: hidden;
+}
+.shope-section .shope-online .container .all-cake-card .main .card .image:hover img {
+  transform: scale(1.1);
+}
+.shope-section .shope-online .container .all-cake-card .main .card .image img {
+  width: 100%;
+  transition: all 0.5s;
+}
+.shope-section .shope-online .container .all-cake-card .main .card .content {
+  text-align: center;
+  padding-top: 40px;
+}
+.shope-section .shope-online .container .all-cake-card .main .card .content h3 {
+  font-family: ivypresto-display, serif;
+  text-transform: capitalize;
+  font-size: 25px;
+  color: #241c10;
+  font-weight: 600;
+}
+.shope-section .shope-online .container .all-cake-card .main .card .content span {
+  padding-top: 10px;
+  color: #6a5952;
+  font-size: 20px;
+  font-weight: 600;
+  display: block;
+}
+
+footer {
+  padding: 40px 0px;
+  background-color: #1f1207;
+}
+footer .container .row .main .logo {
+  width: 30%;
+}
+footer .container .row .main .address {
+  width: 30%;
+}
+footer .container .row .main .address h3 {
+  color: white;
+  text-transform: capitalize;
+  font-size: 22px;
+}
+footer .container .row .main .address p {
+  padding-top: 15px;
+  color: #afa8a2;
+  font-size: 17px;
+}
+footer .container .row .main .hello {
+  width: 25%;
+}
+footer .container .row .main .hello h3 {
+  color: white;
+  text-transform: capitalize;
+  font-size: 22px;
+}
+footer .container .row .main .hello span {
+  padding-top: 15px;
+  color: #afa8a2;
+  font-size: 17px;
+  display: block;
+  text-decoration: underline;
+}
+footer .container .row .main .hello h4 {
+  padding-top: 12px;
+  color: #afa8a2;
+  text-transform: capitalize;
+  font-size: 19px;
+}
+footer .container .row .main .socials {
+  width: 15%;
+}
+footer .container .row .main .socials h3 {
+  color: white;
+  text-transform: capitalize;
+  font-size: 22px;
+}
+footer .container .row .main .socials ul {
+  padding-top: 12px;
+}
+footer .container .row .main .socials ul li {
+  padding: 5px 0px;
+  color: #afa8a2;
+  text-transform: capitalize;
+}
+
+.contact-page .container .row .main {
+  width: 70%;
+  margin: 0px auto;
+}
+.contact-page .container .row .main .address {
+  width: 30%;
+}
+.contact-page .container .row .main .address h2 {
+  font-family: ivypresto-display, serif;
+}
+.contact-page .container .row .main .address h2 p {
+  color: #6a5952;
+}
+.contact-page .container .row .main .form {
+  width: 70%;
+}/*# sourceMappingURL=pages.css.map */

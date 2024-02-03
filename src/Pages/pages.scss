@@ -1,0 +1,463 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1340px;
+    margin: 0px auto;
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+// header start
+
+header {
+    // background-color: #e73840;
+    padding: 15px 50px;
+    position: absolute;
+    width: 100%;
+
+    .main {
+        align-items: center;
+
+        .logo {
+            width: 15%;
+        }
+
+        .menu {
+            width: 60%;
+
+            ul {
+                li {
+                    text-transform: capitalize;
+                    font-size: 19px;
+                    padding: 12px 12px;
+                    font-weight: 600;
+                    color: white;
+                    transition: all 0.5s;
+
+                    &:hover {
+                        color: rgb(79, 0, 0);
+                    }
+                }
+            }
+        }
+
+        .icon {
+            width: 25%;
+
+            ul {
+                justify-content: end;
+
+                li {
+                    i {
+                        font-size: 20px;
+                        padding: 0px 12px;
+                        color: white;
+                        transition: all 0.5s;
+                    }
+
+                    &:hover {
+                        i {
+                            color: rgb(79, 0, 0);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// header end
+
+// slider-section start 
+
+.slider-section {
+    // background-image: url("/public/slider.jpg");
+    background-image: url("/public/slider.jpg");
+    background-size: cover;
+    height: 100vh;
+
+    .container {
+        .row {
+
+            .content,
+            .content-2 {
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: center;
+                height: 50vh;
+
+                .details {
+                    span {
+                        font-size: 28px;
+                        color: white;
+                    }
+
+                    h2 {
+                        font-size: 90px;
+                        color: white;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// slider-section end
+
+// about-section start 
+
+.about-section {
+    padding: 40px 0px;
+    background-image: url('/public/bg-vector-1.svg');
+    background-repeat: no-repeat;
+
+    .container {
+        .row {
+            .head {
+                width: 40%;
+                margin: 0px auto;
+                padding: 60px 0px;
+
+                span {
+                    text-align: center;
+                    display: block;
+                    color: #e73840;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                }
+
+                h3 {
+                    text-align: center;
+                    font-family: ivypresto-display, serif;
+                    font-size: 55px;
+                    font-weight: 500;
+                    padding: 12px 0px;
+                }
+            }
+
+            .all-cards {
+                padding: 30px 0px;
+
+                .main {
+                    width: 25%;
+                    padding: 15px;
+
+                    .card {
+                        height: 400px;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        position: relative;
+                        background-blend-mode: darken;
+                        background-color: #00000029;
+
+                        &::after {
+                            position: absolute;
+                            content: '';
+                            box-sizing: border-box;
+                            background-color: #c9a98a8b;
+                            width: 0%;
+                            height: 0%;
+                        }
+
+                        .containe {
+                            position: absolute;
+                            bottom: 20px;
+                            left: 30px;
+
+                            .name {
+                                span {
+                                    font-size: 25px;
+                                    color: white;
+                                    font-weight: 600;
+                                    text-transform: capitalize;
+                                    display: block;
+                                }
+                            }
+                        }
+
+                        &:hover {
+                            .containe {
+                                .name {
+                                    span {
+                                        color: #7f1319;
+                                    }
+                                }
+                            }
+
+                            &::after {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// about-section end
+
+// shope section start
+
+.shope-section {
+    padding: 40px 0px;
+
+    .video {
+        padding: 40px 0px;
+        background-image: url('/public/cake.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        height: 650px;
+        position: relative;
+
+        .v-tag {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%);
+            width: 80px;
+            height: 80px;
+            border: 2px solid white;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            span {
+
+                display: block;
+                font-weight: 600;
+                color: white;
+                text-transform: uppercase;
+            }
+        }
+    }
+
+    .shope-online {
+        background-image: url('/public/gold-patten.png');
+        background-color: #FBF6F2;
+        padding: 120px 0px 80px;
+
+        .container {
+            .row {
+                .elementor {
+                    justify-content: space-between;
+                    padding: 25px 0px;
+
+                    .card {
+                        width: 15%;
+
+                        img {
+                            transform: scale(0.9);
+                            transition: all 0.5s;
+
+                            &:hover {
+                                transform: scale(1);
+                            }
+                        }
+                    }
+                }
+
+                .head {
+                    width: 40%;
+                    margin: 0px auto;
+                    padding-top: 60px;
+
+                    span {
+                        text-align: center;
+                        display: block;
+                        color: #e73840;
+                        text-transform: uppercase;
+                        font-weight: 700;
+                    }
+
+                    h3 {
+                        text-align: center;
+                        font-family: ivypresto-display, serif;
+                        font-size: 55px;
+                        font-weight: 500;
+                        padding-top: 30px;
+                    }
+                }
+            }
+
+            .all-cake-card {
+                padding: 50px 0px 40px;
+
+                .main {
+                    width: 25%;
+                    padding: 15px;
+
+                    .card {
+
+                        .image {
+                            overflow: hidden;
+
+                            &:hover {
+                                img {
+                                    transform: scale(1.1);
+                                }
+                            }
+
+                            img {
+                                width: 100%;
+                                transition: all 0.5s;
+                            }
+                        }
+
+                        .content {
+                            text-align: center;
+                            padding-top: 40px;
+
+                            h3 {
+                                font-family: ivypresto-display, serif;
+                                text-transform: capitalize;
+                                font-size: 25px;
+                                color: #241c10;
+                                font-weight: 600;
+                            }
+
+                            span {
+                                padding-top: 10px;
+                                color: #6a5952;
+                                font-size: 20px;
+                                font-weight: 600;
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// shope section end
+
+// footer start
+
+footer {
+    padding: 40px 0px;
+    background-color: #1f1207;
+
+    .container {
+        .row {
+            .main {
+                .logo {
+                    width: 30%;
+                }
+
+                .address {
+                    width: 30%;
+
+                    h3 {
+                        color: white;
+                        text-transform: capitalize;
+                        font-size: 22px;
+                    }
+
+                    p {
+                        padding-top: 15px;
+                        color: #afa8a2;
+                        font-size: 17px;
+                    }
+                }
+
+                .hello {
+                    width: 25%;
+
+                    h3 {
+                        color: white;
+                        text-transform: capitalize;
+                        font-size: 22px;
+                    }
+
+                    span {
+                        padding-top: 15px;
+                        color: #afa8a2;
+                        font-size: 17px;
+                        display: block;
+                        text-decoration: underline;
+                    }
+
+                    h4 {
+                        padding-top: 12px;
+                        color: #afa8a2;
+                        text-transform: capitalize;
+                        font-size: 19px;
+                    }
+                }
+
+                .socials {
+                    width: 15%;
+
+                    h3 {
+                        color: white;
+                        text-transform: capitalize;
+                        font-size: 22px;
+                    }
+
+                    ul {
+                        padding-top: 12px;
+
+                        li {
+                            padding: 5px 0px;
+                            color: #afa8a2;
+                            text-transform: capitalize;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// footer end
+
+// contact-section start
+
+.contact-page {
+    .container {
+        .row {
+            .main {
+                width: 70%;
+                margin: 0px auto;
+
+                .address {
+                    width: 30%;
+
+                    h2 {
+                        font-family: ivypresto-display,serif;
+                        p {
+                            color: #6a5952;
+                        }
+                    }
+                }
+
+                .form {
+                    width: 70%;
+                }
+            }
+        }
+    }
+}
+
+// contact-section end
