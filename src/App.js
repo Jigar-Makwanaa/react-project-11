@@ -16,9 +16,8 @@ function App() {
           <Route path='' element={<Slider />} />
           <Route path='' element={<About />} />
           <Route path='' element={<Shope />} />
+          <Route path='' element={<Contact />} />
           <Route path='' element={<Footer />} /> */}
-
-          {/* <Route path='/contact' element={<Contact />} /> */}
         </Routes>
       </BrowserRouter>
 

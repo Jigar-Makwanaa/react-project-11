@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import "./pages.css"
-import { Link } from 'react-router-dom'
 import axios from 'axios'
 
 const Contact = () => {

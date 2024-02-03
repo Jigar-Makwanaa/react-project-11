@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 
 const Header = () => {
     return (
+
         <header>
             <div className="main flex">
                 <div className="logo">
