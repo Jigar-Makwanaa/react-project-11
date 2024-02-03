@@ -320,16 +320,88 @@ footer .container .row .main .socials ul li {
 .contact-page .container .row .main {
   width: 70%;
   margin: 0px auto;
+  padding: 40px 0px;
 }
 .contact-page .container .row .main .address {
   width: 30%;
 }
 .contact-page .container .row .main .address h2 {
   font-family: ivypresto-display, serif;
+  color: #241c10;
+  font-size: 35px;
+  font-weight: 900;
+  text-transform: capitalize;
+  padding-bottom: 10px;
 }
-.contact-page .container .row .main .address h2 p {
+.contact-page .container .row .main .address p {
   color: #6a5952;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 0px;
+}
+.contact-page .container .row .main .address span {
+  display: block;
+  font-size: 20px;
+  color: #564230;
+  padding: 10px 0px;
+  font-weight: 600;
+}
+.contact-page .container .row .main .address h3 {
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 0px;
+  padding: 10px 0px;
+  font-weight: 600;
 }
 .contact-page .container .row .main .form {
   width: 70%;
+}
+.contact-page .container .row .main .form form ul {
+  justify-content: space-between;
+}
+.contact-page .container .row .main .form form ul li {
+  width: 49%;
+  margin: 5px 0px;
+  padding: 10px 0px;
+}
+.contact-page .container .row .main .form form ul li input {
+  width: 100%;
+  padding: 7px 8px;
+  outline: none;
+  border: 0px;
+  border-bottom: 2px solid #e6e1dc;
+  transition: all 0.5s;
+  font-size: 18px;
+}
+.contact-page .container .row .main .form form ul li input:focus {
+  border-bottom: 2px solid #1f1207;
+}
+.contact-page .container .row .main .form form .massage {
+  padding-top: 15px;
+}
+.contact-page .container .row .main .form form .massage textarea {
+  width: 100%;
+  outline: none;
+  padding: 20px 15px;
+  border: 2px solid #e6e1dc;
+  transition: all 0.5s;
+}
+.contact-page .container .row .main .form form .massage textarea:focus {
+  border: 2px solid #1f1207;
+}
+.contact-page .container .row .main .form form .btn {
+  padding-top: 10px;
+}
+.contact-page .container .row .main .form form .btn button {
+  width: 100%;
+  padding: 10px 0px;
+  font-size: 18px;
+  text-transform: capitalize;
+  color: white;
+  background-color: #ad815c;
+  border: 0px;
+  transition: all 0.5s;
+}
+.contact-page .container .row .main .form form .btn button:hover {
+  background-color: #564230;
 }/*# sourceMappingURL=pages.css.map */

@@ -440,20 +440,108 @@ footer {
             .main {
                 width: 70%;
                 margin: 0px auto;
+                padding: 40px 0px;
 
                 .address {
                     width: 30%;
 
                     h2 {
-                        font-family: ivypresto-display,serif;
-                        p {
-                            color: #6a5952;
-                        }
+                        font-family: ivypresto-display, serif;
+                        color: #241c10;
+                        font-size: 35px;
+                        font-weight: 900;
+                        text-transform: capitalize;
+                        padding-bottom: 10px;
+                    }
+
+                    p {
+                        color: #6a5952;
+                        font-size: 20px;
+                        font-weight: 600;
+                        padding: 10px 0px;
+                    }
+
+                    span {
+                        display: block;
+                        font-size: 20px;
+                        color: #564230;
+                        padding: 10px 0px;
+                        font-weight: 600;
+                    }
+
+                    h3 {
+                        font-size: 20px;
+                        font-weight: 600;
+                        padding: 10px 0px;
+                        padding: 10px 0px;
+                        font-weight: 600;
                     }
                 }
 
                 .form {
                     width: 70%;
+
+                    form {
+
+                        ul {
+                            justify-content: space-between;
+
+                            li {
+                                width: 49%;
+                                margin: 5px 0px;
+                                padding: 10px 0px;
+
+                                input {
+                                    width: 100%;
+                                    padding: 7px 8px;
+                                    outline: none;
+                                    border: 0px;
+                                    border-bottom: 2px solid #e6e1dc;
+                                    transition: all 0.5s;
+                                    font-size: 18px;
+
+                                    &:focus {
+                                        border-bottom: 2px solid #1f1207;
+                                    }
+                                }
+                            }
+                        }
+
+                        .massage {
+                            padding-top: 15px;
+
+                            textarea {
+                                width: 100%;
+                                outline: none;
+                                padding: 20px 15px;
+                                border: 2px solid #e6e1dc;
+                                transition: all 0.5s;
+
+                                &:focus {
+                                    border: 2px solid #1f1207;
+                                }
+                            }
+                        }
+
+                        .btn {
+                            padding-top: 10px;
+
+                            button {
+                                width: 100%;
+                                padding: 10px 0px;
+                                font-size: 18px;
+                                text-transform: capitalize;
+                                color: white;
+                                background-color: #ad815c;
+                                border: 0px;
+                                transition: all 0.5s;
+
+                                &:hover {
+                                    background-color: #564230;
+                                }
+                            }
+                        }
+                    }
                 }
             }
         }

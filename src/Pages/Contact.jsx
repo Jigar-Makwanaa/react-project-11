@@ -45,13 +45,11 @@ const Contact = () => {
                     <div className="main flex">
                         <div className="address">
                             <h2>Contact details</h2>
-                            <p>785 15h Street, Office 478 Berlin, De 81566</p>
+                            <p>785 15h Street,<br /> Office 478 Berlin,<br /> De 81566</p>
                             <span>info@email.com</span>
                             <h3>+1 800 555 25 69</h3>
                         </div>
                         <div className="form">
-                            <h2>email us</h2>
-
                             <form onSubmit={(e) => handleClick(e)}>
                                 <ul className='flex'>
                                     <li>
