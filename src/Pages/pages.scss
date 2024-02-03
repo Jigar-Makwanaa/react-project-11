@@ -444,6 +444,9 @@ footer {
 
                 .address {
                     width: 30%;
+                    background-color: #FBF6F2;
+                    padding: 10px 15px;
+                    border-radius: 12px;
 
                     h2 {
                         font-family: ivypresto-display, serif;
@@ -487,28 +490,40 @@ footer {
                             justify-content: space-between;
 
                             li {
+                                display: flex;
+                                align-items: center;
                                 width: 49%;
                                 margin: 5px 0px;
                                 padding: 10px 0px;
+                                border-bottom: 2px solid #e6e1dc;
+                                transition: all 0.5s;
+
+                                i {
+                                    padding-right: 8px;
+                                    padding: 0px 12px;
+                                    font-size: 18px;
+                                }
+
+                                &:hover {
+                                    border-bottom: 2px solid #1f1207;
+                                }
 
                                 input {
                                     width: 100%;
                                     padding: 7px 8px;
                                     outline: none;
                                     border: 0px;
-                                    border-bottom: 2px solid #e6e1dc;
-                                    transition: all 0.5s;
                                     font-size: 18px;
-
-                                    &:focus {
-                                        border-bottom: 2px solid #1f1207;
-                                    }
                                 }
                             }
                         }
 
                         .massage {
                             padding-top: 15px;
+
+                            i {
+                                padding: 10px 12px;
+                            }
 
                             textarea {
                                 width: 100%;
@@ -520,6 +535,7 @@ footer {
                                 &:focus {
                                     border: 2px solid #1f1207;
                                 }
+
                             }
                         }
 

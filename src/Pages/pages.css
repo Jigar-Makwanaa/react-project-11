@@ -324,6 +324,9 @@ footer .container .row .main .socials ul li {
 }
 .contact-page .container .row .main .address {
   width: 30%;
+  background-color: #FBF6F2;
+  padding: 10px 15px;
+  border-radius: 12px;
 }
 .contact-page .container .row .main .address h2 {
   font-family: ivypresto-display, serif;
@@ -360,24 +363,34 @@ footer .container .row .main .socials ul li {
   justify-content: space-between;
 }
 .contact-page .container .row .main .form form ul li {
+  display: flex;
+  align-items: center;
   width: 49%;
   margin: 5px 0px;
   padding: 10px 0px;
+  border-bottom: 2px solid #e6e1dc;
+  transition: all 0.5s;
+}
+.contact-page .container .row .main .form form ul li i {
+  padding-right: 8px;
+  padding: 0px 12px;
+  font-size: 18px;
+}
+.contact-page .container .row .main .form form ul li:hover {
+  border-bottom: 2px solid #1f1207;
 }
 .contact-page .container .row .main .form form ul li input {
   width: 100%;
   padding: 7px 8px;
   outline: none;
   border: 0px;
-  border-bottom: 2px solid #e6e1dc;
-  transition: all 0.5s;
   font-size: 18px;
-}
-.contact-page .container .row .main .form form ul li input:focus {
-  border-bottom: 2px solid #1f1207;
 }
 .contact-page .container .row .main .form form .massage {
   padding-top: 15px;
+}
+.contact-page .container .row .main .form form .massage i {
+  padding: 10px 12px;
 }
 .contact-page .container .row .main .form form .massage textarea {
   width: 100%;
